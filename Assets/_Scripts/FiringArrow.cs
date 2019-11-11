@@ -1,27 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FiringArrow : MonoBehaviour {
 
-public GameObject projectile;
-public Vector2 velocity;
-bool canShoot = true;
-public Vector2 offset = new Vector2(0.4f, 0.1f);
+    public float speed =20f;
+    public int damage = 25;
+    float moveSpeed = 7f;
 
+    Rigidbody2D rb;
+    PlayerMovement target;
+    Vector2 moveDirection;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D> ();
+        rb.velocity = transform.right * speed;
+        target = GameObject.FindObjectOfType<PlayerMovement>();
+        moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
+        rb.velocity = new Vector2 (moveDirection.x, moveDirection.y);
+        Destroy (gameObject, 3f);
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(){
-			Instantiate(projectile, (Vector2)transform.position + offset * transform.localScale.x, Quaternion.identity);
-		}
-			
-
-	}
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Bowman enemy = hitInfo.GetComponent<Bowman>();
+        
+        if (hitInfo.gameObject.name.Equals ("player")) {
+            SceneManager.LoadScene("Level1");
+            Destroy (gameObject);
+        }
+    }
 }
