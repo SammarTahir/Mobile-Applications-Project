@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour {
 		// Physics
 		gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, 
 			gameObject.GetComponent<Rigidbody2D>().velocity.y);
-
 	}
 
 	void Jump(){
@@ -51,5 +50,4 @@ public class PlayerMovement : MonoBehaviour {
 		localScale.x *= -1;
 		transform.localScale = localScale;
 	}
-	
 }

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\CameraSystem.cs" />
+     <Compile Include="Assets\_Scripts\FiringArrow.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\Settings.cs" />
