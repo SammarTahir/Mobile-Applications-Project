@@ -4,18 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Bowman : MonoBehaviour {
-// use later for other stuff
-    // add the collider stuff, to detect if a bullet hits
-    // detect the collisiion
-    // destroy the bullet prefab, then this prefab
-
-    //enemy movement variables
-  
     private float timeBtwShots;
     public float startTimeBtwShots;
 
     public GameObject projectile;  
     public Transform player;
+    public int health;
+
+    public GameObject bloodEffect;
 
     void Start(){
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -31,6 +27,11 @@ public class Bowman : MonoBehaviour {
             timeBtwShots -= Time.deltaTime;
         }
     }
+
+    public void TakeDamage(int damage){
+        Instantiate(bloodEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    } 
 
    void OnTriggerEnter2D(Collider2D hitInfo)
     {
