@@ -34,9 +34,7 @@ public class Bowman : MonoBehaviour {
     } 
 
    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Bowman enemy = hitInfo.GetComponent<Bowman>();
-        
+    {   
         if (hitInfo.gameObject.name.Equals ("player")) {
             Destroy (gameObject);
         }

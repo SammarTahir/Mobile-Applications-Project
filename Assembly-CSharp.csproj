@@ -59,7 +59,6 @@
      <Compile Include="Assets\_Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\_Scripts\Settings.cs" />
      <Compile Include="Assets\_Scripts\StartScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>E:/GMIT/Year 4 Semster 1/Moblie Application Development/FinalYearProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
