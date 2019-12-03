@@ -2112,34 +2112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.96, y: 0.96}
   m_EdgeRadius: 0
---- !u!1 &1040145289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1040145290}
-  m_Layer: 0
-  m_Name: AttackPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1040145290
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1040145289}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1604576563}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120414287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,27 +2555,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114002349399053720, guid: 68802f5df82211040beae528f3b25185,
-        type: 2}
-      propertyPath: attackPos
-      value: 
-      objectReference: {fileID: 1040145290}
-    - target: {fileID: 114002349399053720, guid: 68802f5df82211040beae528f3b25185,
-        type: 2}
-      propertyPath: attackRange
-      value: 4.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 114002349399053720, guid: 68802f5df82211040beae528f3b25185,
-        type: 2}
-      propertyPath: whatIsEnemies.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 114002349399053720, guid: 68802f5df82211040beae528f3b25185,
-        type: 2}
-      propertyPath: swordEffect
-      value: 
-      objectReference: {fileID: 1202729997556022, guid: 68e41e119f848ce4f808b0fdf374473f,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68802f5df82211040beae528f3b25185, type: 2}
   m_IsPrefabAsset: 0

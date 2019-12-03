@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\_Scripts\Bowman.cs" />
      <Compile Include="Assets\_Scripts\CameraSystem.cs" />
+     <Compile Include="Assets\_Scripts\ChasingDog.cs" />
      <Compile Include="Assets\_Scripts\FiringArrow.cs" />
      <Compile Include="Assets\_Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />

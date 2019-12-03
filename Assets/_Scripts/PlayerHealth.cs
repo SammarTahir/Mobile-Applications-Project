@@ -7,13 +7,13 @@ public class PlayerHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameObject.transform.position.y < -6){
+		if (gameObject.transform.position.y <= -6){
 			StartCoroutine ("Die");
 		}
 	}
 
 	IEnumerator Die(){
-		SceneManager.LoadScene("Level1");
+		SceneManager.LoadScene("Level2");
 		yield return null;
 		
 	}
