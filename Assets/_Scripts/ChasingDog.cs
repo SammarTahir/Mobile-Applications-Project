@@ -2,28 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Pathfinding;
 
 public class ChasingDog : MonoBehaviour {
 
- public Transform target;//set target from inspector instead of looking in Update
-     public float speed = 3f;
+	// This code is for AI movement 
+	// This code is soruced at https://www.youtube.com/watch?v=jvtFUfJ6CP8&t=762s
+	// This will be used for all enenmy AI
+	public AIPath aiPath;
  
- 
-     void Start () {
-         
-     }
- 
-     void Update(){
-         
-         //rotate to look at the player
-         transform.LookAt(target.position);
-         transform.Rotate(new Vector3(0,-90,0),Space.Self);//correcting the original rotation
-         
-         
-         //move towards the player
-         if (Vector3.Distance(transform.position,target.position)>1f){//move if distance from target is greater than 1
-             transform.Translate(new Vector3(speed* Time.deltaTime,0,0) );
-         }
- 
-     }
+	// Update is called once per frame
+    void Update(){
+		// This is for flipping the dog image if the player is to the left or right of this object
+		if (aiPath.desiredVelocity.x >= 0.01f){
+			transform.localScale = new Vector3(-1f, 1f, 1f);
+		}
+		else if (aiPath.desiredVelocity.x <= 0.01f){
+			transform.localScale = new Vector3(1f, 1f, 1f);
+		}
+	}
 }
