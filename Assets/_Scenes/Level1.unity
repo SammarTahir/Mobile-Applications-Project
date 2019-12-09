@@ -2656,6 +2656,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114818986886473764, guid: 68802f5df82211040beae528f3b25185,
+        type: 2}
+      propertyPath: swordEffect
+      value: 
+      objectReference: {fileID: 1518387711670234, guid: d38828a9c439b5b4f859029eda508fd9,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68802f5df82211040beae528f3b25185, type: 2}
   m_IsPrefabAsset: 0

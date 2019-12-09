@@ -6144,7 +6144,7 @@ MonoBehaviour:
     m_Bits: 256
   attackRange: 10
   damage: 10
-  swordEffect: {fileID: 1202729997556022, guid: 68e41e119f848ce4f808b0fdf374473f,
+  swordEffect: {fileID: 1518387711670234, guid: d38828a9c439b5b4f859029eda508fd9,
     type: 2}
 --- !u!4 &1537082627 stripped
 Transform:

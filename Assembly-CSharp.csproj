@@ -60,6 +60,7 @@
      <Compile Include="Assets\_Scripts\CameraSystem.cs" />
      <Compile Include="Assets\_Scripts\ChasingDog.cs" />
      <Compile Include="Assets\_Scripts\Door.cs" />
+     <Compile Include="Assets\_Scripts\FinalBoss.cs" />
      <Compile Include="Assets\_Scripts\Level1\Bowman.cs" />
      <Compile Include="Assets\_Scripts\Level1\Checkpoint.cs" />
      <Compile Include="Assets\_Scripts\Level1\FiringArrow.cs" />
