@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttackBoss : MonoBehaviour {
 
-private float timeBtwAttack;
+	private float timeBtwAttack;
 	public float startTimeBtwAttack;
 
 	public Transform attackPos;
@@ -13,10 +13,6 @@ private float timeBtwAttack;
 	public int damage;
 
 	public GameObject swordEffect;
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {

@@ -24,7 +24,6 @@ public class PlayerAttack : MonoBehaviour {
 			// Then you can attack the enemy
 			if(Input.GetKey(KeyCode.UpArrow)){
 				Instantiate(swordEffect, transform.position, Quaternion.identity);
-				Destroy (swordEffect);
 				// All enenies within this circle will be hit by the sword
 				Collider2D[] eneniesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
 				for (int i = 0; i < eneniesToDamage.Length; i++) {
