@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &20809797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4378764896735566, guid: 68802f5df82211040beae528f3b25185,
+    type: 2}
+  m_PrefabInternal: {fileID: 445275782}
 --- !u!1 &23929653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,7 +1627,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114818986886473764, guid: 68802f5df82211040beae528f3b25185,
+        type: 2}
+      propertyPath: whatIsEnemies.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114818986886473764, guid: 68802f5df82211040beae528f3b25185, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 68802f5df82211040beae528f3b25185, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &454701438
@@ -2246,6 +2257,10 @@ MonoBehaviour:
   moveSpeed: 1
   bloodEffect: {fileID: 1357792224640896, guid: 02c9bc2995e77cb47b039f425cccdcdb,
     type: 2}
+  startTimeBtwShots: 2
+  projectile: {fileID: 1825090149805330, guid: d24963e8f98ece8499874dbb2955d850, type: 2}
+  player: {fileID: 1537082627}
+  health: 0
 --- !u!50 &572149610
 Rigidbody2D:
   serializedVersion: 4
@@ -6319,6 +6334,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1537082620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1786945873407002, guid: 68802f5df82211040beae528f3b25185,
+    type: 2}
+  m_PrefabInternal: {fileID: 445275782}
+--- !u!114 &1537082621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537082620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512077f1b5661454d8fc2c7c6572439a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttack: 0.1
+  attackPos: {fileID: 20809797}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 10
+  damage: 10
+  swordEffect: {fileID: 1202729997556022, guid: 68e41e119f848ce4f808b0fdf374473f,
+    type: 2}
+--- !u!4 &1537082627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4769899823016564, guid: 68802f5df82211040beae528f3b25185,
+    type: 2}
+  m_PrefabInternal: {fileID: 445275782}
 --- !u!1 &1606233225
 GameObject:
   m_ObjectHideFlags: 0

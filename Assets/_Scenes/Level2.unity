@@ -1474,6 +1474,17 @@ Prefab:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
+        type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1593732312778168, guid: 93bab4902a12b0b40a4c2fe59fc15d96,
+        type: 2}
+    - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1335884534}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32ebed9d05364674aa4e411cdf747e7b, type: 2}
   m_IsPrefabAsset: 0
@@ -2733,6 +2744,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
+        type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1593732312778168, guid: 93bab4902a12b0b40a4c2fe59fc15d96,
+        type: 2}
+    - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1335884534}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32ebed9d05364674aa4e411cdf747e7b, type: 2}
   m_IsPrefabAsset: 0
@@ -3435,6 +3457,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1335884534 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4769899823016564, guid: 68802f5df82211040beae528f3b25185,
+    type: 2}
+  m_PrefabInternal: {fileID: 1008164764}
 --- !u!1 &1344636767
 GameObject:
   m_ObjectHideFlags: 0

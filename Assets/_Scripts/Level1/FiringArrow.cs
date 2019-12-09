@@ -28,7 +28,7 @@ public class FiringArrow : MonoBehaviour {
     {
         
         if (hitInfo.gameObject.name.Equals ("player")) {
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level1");
             Destroy (gameObject);
         }
     }

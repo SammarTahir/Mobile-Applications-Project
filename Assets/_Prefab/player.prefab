@@ -36,10 +36,10 @@ GameObject:
   - component: {fileID: 4769899823016564}
   - component: {fileID: 212292595140404248}
   - component: {fileID: 61686312961577274}
-  - component: {fileID: 114002349399053720}
   - component: {fileID: 50505044855824788}
   - component: {fileID: 114403752369994856}
   - component: {fileID: 114661292280043672}
+  - component: {fileID: 114818986886473764}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -119,26 +119,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.8}
   m_EdgeRadius: 0
---- !u!114 &114002349399053720
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1786945873407002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793e9834ac498094e8c1c6bf94559323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0.3
-  attackPos: {fileID: 4378764896735566}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 256
-  attackRange: 4.08
-  damage: 0
-  swordEffect: {fileID: 1202729997556022, guid: 68e41e119f848ce4f808b0fdf374473f,
-    type: 2}
 --- !u!114 &114403752369994856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,6 +143,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707e40fc4b0403b41939d732f7f41adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114818986886473764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1786945873407002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df29cfc91510b474fac8d6049e5632f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttack: 0.1
+  attackPos: {fileID: 4378764896735566}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 10
+  damage: 100
+  swordEffect: {fileID: 1202729997556022, guid: 68e41e119f848ce4f808b0fdf374473f,
+    type: 2}
 --- !u!212 &212292595140404248
 SpriteRenderer:
   m_ObjectHideFlags: 1

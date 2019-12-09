@@ -53,14 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\BigDude.cs" />
+     <Compile Include="Assets\_Scripts\Boss Level 1\BigDude.cs" />
+     <Compile Include="Assets\_Scripts\Boss Level 1\EnergyBall.cs" />
+     <Compile Include="Assets\_Scripts\Boss Level 1\PlayerAttackBoss.cs" />
      <Compile Include="Assets\_Scripts\CameraSystem.cs" />
      <Compile Include="Assets\_Scripts\ChasingDog.cs" />
      <Compile Include="Assets\_Scripts\Level1\Bowman.cs" />
      <Compile Include="Assets\_Scripts\Level1\Checkpoint.cs" />
      <Compile Include="Assets\_Scripts\Level1\FiringArrow.cs" />
+     <Compile Include="Assets\_Scripts\Level1\PlayerAttack.cs" />
      <Compile Include="Assets\_Scripts\Level1\PlayerHealth.cs" />
-     <Compile Include="Assets\_Scripts\PlayerAttack.cs" />
+     <Compile Include="Assets\_Scripts\Level2\FastArrow.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\StartScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
