@@ -1478,7 +1478,7 @@ Prefab:
         type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1593732312778168, guid: 93bab4902a12b0b40a4c2fe59fc15d96,
+      objectReference: {fileID: 1934394387766986, guid: e7724e2ceced93a4a9a6e45b94dbcd31,
         type: 2}
     - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
         type: 2}
@@ -2748,7 +2748,7 @@ Prefab:
         type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1593732312778168, guid: 93bab4902a12b0b40a4c2fe59fc15d96,
+      objectReference: {fileID: 1934394387766986, guid: e7724e2ceced93a4a9a6e45b94dbcd31,
         type: 2}
     - target: {fileID: 114814179636956214, guid: 32ebed9d05364674aa4e411cdf747e7b,
         type: 2}

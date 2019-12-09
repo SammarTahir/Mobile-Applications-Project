@@ -26,8 +26,7 @@ public class BigDude : MonoBehaviour {
     public GameObject projectile;  
     public Transform player;
     public int health;
-    public AIPath aiPath;
-
+    
 	// Use this for initialization
 	private void Start () {
 
@@ -51,13 +50,6 @@ public class BigDude : MonoBehaviour {
         }else{
             timeBtwShots -= Time.deltaTime;
         }
-
-        if (aiPath.desiredVelocity.x >= 0.01f){
-			transform.localScale = new Vector3(-1f, 1f, 1f);
-		}
-		else if (aiPath.desiredVelocity.x <= 0.01f){
-			transform.localScale = new Vector3(1f, 1f, 1f);
-		}
 	}
 
     // Method that actually make Enemy walk

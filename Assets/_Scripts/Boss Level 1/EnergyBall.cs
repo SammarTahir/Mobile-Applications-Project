@@ -28,7 +28,7 @@ public class EnergyBall : MonoBehaviour {
     {
         
         if (hitInfo.gameObject.name.Equals ("player")) {
-            SceneManager.LoadScene("BossLevel1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Destroy (gameObject);
         }
     }

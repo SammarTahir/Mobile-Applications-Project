@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	IEnumerator Die(){
-		SceneManager.LoadScene("Level1");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		yield return null;
 		
 	}
