@@ -21,4 +21,13 @@ public class ChasingDog : MonoBehaviour {
 			transform.localScale = new Vector3(1f, 1f, 1f);
 		}
 	}
+
+	 void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        
+        if (hitInfo.gameObject.name.Equals ("player")) {
+            SceneManager.LoadScene("Level3");
+            Destroy (gameObject);
+        }
+    }
 }

@@ -53,12 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\Bowman.cs" />
+     <Compile Include="Assets\_Scripts\BigDude.cs" />
      <Compile Include="Assets\_Scripts\CameraSystem.cs" />
      <Compile Include="Assets\_Scripts\ChasingDog.cs" />
-     <Compile Include="Assets\_Scripts\FiringArrow.cs" />
+     <Compile Include="Assets\_Scripts\Level1\Bowman.cs" />
+     <Compile Include="Assets\_Scripts\Level1\Checkpoint.cs" />
+     <Compile Include="Assets\_Scripts\Level1\FiringArrow.cs" />
+     <Compile Include="Assets\_Scripts\Level1\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerAttack.cs" />
-     <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\StartScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
@@ -271,14 +273,14 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>E:/GMIT/Year 4 Semster 1/Moblie Application Development/FinalYearProject/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/samma/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/samma/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>E:/GMIT/Year 4 Semster 1/Moblie Application Development/FinalYearProject/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

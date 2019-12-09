@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour {
 				// All enenies within this circle will be hit by the sword
 				Collider2D[] eneniesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
 				for (int i = 0; i < eneniesToDamage.Length; i++) {
-					eneniesToDamage[i].GetComponent<Bowman>().TakeDamage(damage);
+					eneniesToDamage[i].GetComponent<BigDude>().TakeDamage(damage);
 
 				}
 			}
