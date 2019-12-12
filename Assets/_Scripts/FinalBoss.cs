@@ -77,7 +77,7 @@ public class FinalBoss : MonoBehaviour {
 	public void TakeDamage(int damage){
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
-        SceneManager.LoadScene("endScene");
+        SceneManager.LoadScene("StartScreen");
     } 
 
    void OnTriggerEnter2D(Collider2D hitInfo)

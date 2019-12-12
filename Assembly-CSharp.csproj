@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\AttackBoss.cs" />
      <Compile Include="Assets\_Scripts\AttackSmallDude.cs" />
      <Compile Include="Assets\_Scripts\Boss Level 1\BigDude.cs" />
      <Compile Include="Assets\_Scripts\Boss Level 1\EnergyBall.cs" />
@@ -67,6 +68,9 @@
      <Compile Include="Assets\_Scripts\Level1\PlayerAttack.cs" />
      <Compile Include="Assets\_Scripts\Level1\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\Level2\FastArrow.cs" />
+     <Compile Include="Assets\_Scripts\MainMenu.cs" />
+     <Compile Include="Assets\_Scripts\PassageFinalBoss.cs" />
+     <Compile Include="Assets\_Scripts\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\SmallDude.cs" />
      <Compile Include="Assets\_Scripts\StartScript.cs" />
